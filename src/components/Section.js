@@ -24,7 +24,7 @@ function Section({
             {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
           </ButtonGroup>
         </Fade>
-        <DownArrow src="/images/down-arrow.svg" />
+        <DownArrow src="/public/images/down-arrow.svg" />
       </Buttons>
     </Wrap>
   );
@@ -38,12 +38,12 @@ const Wrap = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/images/model-s.jpg");
+  background-image: url("/public/images/model-s.jpg");
   display: flex;
   flex-direction: column;
   justify-content: space-between; // vertical
   align-items: center; // horizontal
-  background-image: ${(props) => `url("/images/${props.bgImage}")`};
+  background-image: ${(props) => `url("/public/images/${props.bgImage}")`};
 `;
 
 const ItemText = styled.div`
